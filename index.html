@@ -7,7 +7,11 @@
     <style>
         h1 {display: none;}
         section {max-width: 1200px; margin: auto; background-color: black; position: relative; overflow: hidden;}
+        
+        section img {transition: 0.5s;}
+        section:hover img {filter: hue-rotate(70deg) blur(5px); transform: scale(1.1);} /*색상 변경과 블러셔 기능*/
         img {display: block;}
+       
 
         [alt="girl"] {top: 0; position: relative; margin: 0 0 0 auto; animation: toLeft 2s both; width: 45%;}
         [alt="splash"] {top: 0; left: 4%; position: absolute; animation: toLeft2 2s 0.5s both; width: 76%;} /*높이는 변화없이 넓이만 줄이는 방법이 무엇인가?*/
